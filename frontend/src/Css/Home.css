@@ -204,6 +204,13 @@
     font-size: 1.2em;
   }
 
+  .card img {
+    margin-top: 10px;
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px 8px 8px 8px;
+  }
+
 }
 
 @media only screen and (max-width: 1000px) {
