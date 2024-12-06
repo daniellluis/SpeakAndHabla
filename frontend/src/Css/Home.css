@@ -151,10 +151,10 @@
 
 @keyframes colorChange {
   0% {
-    color: #f44cb1; /* Rosa para el primer h2 */
+    color: #25A882; /* Rosa para el primer h2 */
   }
   33% {
-    color: #23325a; /* El primer h2 pasa a gris */
+    color: #f44cb1; /* El primer h2 pasa a gris */
   }
   66% {
     color: #25A882; /* Verde para el segundo h2 */
@@ -167,7 +167,7 @@
 /* Animación para el segundo h2 */
 @keyframes colorChange2 {
   0% {
-    color: #23325A; /* Empieza en gris */
+    color: #f44cb1;; /* Empieza en gris */
   }
   33% {
     color: #25A882; /* Cambia a verde */
@@ -189,6 +189,7 @@
 
   .welcome-text {
     font-size: 1.5em;
+    
   }
   .card:nth-child(odd),
   .card:nth-child(even) {
@@ -230,6 +231,12 @@
 }
 
 @media only screen and (max-width: 600px) {
+  
+  .welcome-1 , .welcome-2 {
+    font-size: 1.9rem;
+    margin: 0px;
+  }
+  
   .card:nth-child(odd),
   .card:nth-child(even) {
     flex-direction: column;
@@ -271,7 +278,7 @@
 /* Media queries para pantallas grandes */
 @media (min-width: 2000px) {
   .welcome-1, .welcome-2 {
-    font-size: 3.5rem; /* Ajustar el tamaño de la fuente */
+    font-size: 2.7rem; /* Ajustar el tamaño de la fuente */
   }
 
   .welcome-text {
@@ -286,6 +293,14 @@
     font-size: 1.5rem; /* Ajustar el tamaño de la fuente */
   }
 }
+
+@media (min-width: 2500px) {
+  .welcome-1, .welcome-2 {
+    font-size: 3.3rem; /* Ajustar el tamaño de la fuente */
+  }
+
+}
+
 
 @media (min-width: 3000px) {
   .welcome-1, .welcome-2 {
