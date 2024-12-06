@@ -13,13 +13,13 @@ function Contacto() {
       title: "Contacta con nosotros",
       text: "Para cualquier consulta sobre nuestros cursos, ofertas e inscripciones, estaremos encantados de ayudarte.",
       email: "info@speakandhabla.com",
-      whatsapp: "+34 612-25-85-41",
+      whatsapp: "+34 612 25 85 41",
     },
     EN: {
       title: "Contact Us",
       text: "For any inquiries about our courses, offers and registrations, we will be more than happy to help you.",
       email: "info@speakandhabla.com",
-      whatsapp: "+34 612-25-85-41",
+      whatsapp: "+34 612 25 85 41",
     }
   };
 

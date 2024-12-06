@@ -19,12 +19,12 @@ function ContactForm() {
       Error: "Error al enviar el correo"
     },
     EN: {
-      FormTitle1: "We want to get to know you",
+      FormTitle1: "We'd love to hear from you",
       FormTitle2: "Do you want to try the Speak&Habla method? Contact us!",
       Name: "Name:",
       Email: "Email:",
       Message: "Message:",
-      Submit: "contact",
+      Submit: "Contact",
       Success: "Email sent successfully",
       Error: "Error sending email"
     }

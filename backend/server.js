@@ -1,3 +1,4 @@
+require('dotenv').config({ path: '.env.local' });
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -17,9 +18,8 @@ app.post('/send-email',async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail', 
         auth: {
-            user: 'hellospeakandhabla@gmail.com', 
-            //pass: 'igui sdsq xqtx uimp', 
-            pass: 'tqmkemymcrvrmvbi',
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,
         },
         logger: true,   // Habilita el registro de logs
         debug: true,    // Habilita el modo de depuración

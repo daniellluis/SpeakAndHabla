@@ -171,7 +171,38 @@ button:hover {
   }
 
   .h2-form {
-      font-size: 24px; /* Ajustar el tamaño de la fuente */
+      font-size: 21px; /* Ajustar el tamaño de la fuente */
+  }
+
+  .title {
+      font-size: 16px; /* Ajustar el tamaño de la fuente */
+  }
+
+  input,
+  textarea {
+      padding: 6px; /* Ajustar el padding */
+      font-size: 0.8rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  button {
+      padding: 6px 12px; /* Ajustar el padding */
+      font-size: 0.8rem; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+
+
+@media (max-width: 360px) {
+  .form-container {
+      padding: 20px 10px; /* Ajustar padding horizontal */
+  }
+
+  .form {
+      max-width: 250px; /* Ajustar el ancho máximo del formulario */
+  }
+
+  .h2-form {
+      font-size: 20px; /* Ajustar el tamaño de la fuente */
   }
 
   .title {

@@ -1,9 +1,9 @@
 import React from 'react';
 import '../Css/Home.css';
 import ContactForm from '../components/ContactForm';
-import Carouse1 from '../img/Logos/persons/slide-1.png';
-import Carouse2 from '../img/Logos/persons/slide-2.png';
-import Carouse4 from '../img/Logos/persons/slide-3.png';
+import Carouse1 from '../img/Logos/persons/slide-2.png';
+import Carouse2 from '../img/Logos/persons/slide-3.png';
+import Carouse4 from '../img/Logos/persons/slide-1.png';
 import Card1 from '../img/Logos/persons/teacher-3.jpg';
 import Card2 from '../img/Logos/persons/games.jpg';
 import Card3 from '../img/Logos/persons/clases-en-grupo.jpg';
@@ -32,7 +32,7 @@ function Home() {
       card5Desc: "El éxito está en tus manos. En Speak&Habla te preparamos para asistir a los exámenes oficiales y obtener los certificados tanto de inglés como de español de todos los niveles con mucho éxito. También nos encargamos de la preparación para cualquier examen dentro de tu empresa para que puedas conseguir tus metas profesionales."
      },
      EN: { 
-      welcomeTitle1: "English or Spanish Courses",
+      welcomeTitle1: "English and Spanish Courses",
       welcomeTitle2: "Two languages, endless opportunities",
       card1Title: "Online classes",
       card1Desc: "Your convenience is very important to us. Online classes in groups or individually with flexible schedules that allow you to manage your time without having to commute. No matter where you live, our online classes are designed so that everyone can learn without geographical barriers.",

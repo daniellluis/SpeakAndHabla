@@ -9,11 +9,11 @@ function ContactFormContact() {
   const { language } = useLanguage();
   const texts = {
     ES: {
-      FormTitle1: "Contacta",
+      FormTitle1: "Escríbenos",
       Name: "Nombre:",
       Email: "Correo electrónico:",
       Message: "Mensaje:",
-      Submit: "Contacto",
+      Submit: "Enviar",
       Success: "Correo enviado correctamente",
       Error: "Error al enviar el correo"
     },
@@ -22,7 +22,7 @@ function ContactFormContact() {
       Name: "Name:",
       Email: "Email:",
       Message: "Message:",
-      Submit: "contact",
+      Submit: "Send",
       Success: "Email sent successfully",
       Error: "Error sending email"
     }
