@@ -1,0 +1,85 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.footer {
+  background-color: #23325A; /* Color de fondo deseado */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Empuja el footer hacia abajo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.social-icons a {
+  color: white; /* Color de los iconos */
+  margin: 0 15px;
+  font-size: 2rem; /* Tamaño de los iconos */
+  text-decoration: none;
+  line-height: 2rem;
+}
+
+.social-icons a:hover {
+  color: #f44cb1; /* Color al pasar el cursor */
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0; /* Ajustar padding para dispositivos móviles */
+  }
+
+  .social-icons a {
+    margin: 0 10px; /* Ajustar margen para dispositivos móviles */
+    font-size: 1.8rem;
+    line-height: 1.8rem; 
+  }
+}
+
+/* Media queries para pantallas grandes */
+@media (min-width: 2000px) {
+  .footer {
+    padding: 30px 0; /* Ajustar padding para pantallas grandes */
+  }
+
+  .social-icons a {
+    margin: 0 20px; /* Ajustar margen para pantallas grandes */
+    font-size: 2.5rem; /* Ajustar tamaño de los iconos */
+    line-height: 2.5rem; /* Ajustar line-height para pantallas grandes */
+  }
+}
+
+@media (min-width: 3000px) {
+  .footer {
+    padding: 40px 0; /* Ajustar padding para pantallas más grandes */
+  }
+
+  .social-icons a {
+    margin: 0 25px; /* Ajustar margen para pantallas más grandes */
+    font-size: 3.5rem; /* Ajustar tamaño de los iconos */
+    line-height: 3rem; /* Ajustar line-height para pantallas más grandes */
+  }
+}
+
+@media (min-width: 4000px) {
+  .footer {
+    padding: 50px 0; /* Ajustar padding para pantallas muy grandes */
+  }
+
+  .social-icons a {
+    margin: 0 30px; /* Ajustar margen para pantallas muy grandes */
+    font-size: 3.7rem; /* Ajustar tamaño de los iconos */
+    line-height: 3.5rem; /* Ajustar line-height para pantallas muy grandes */
+  }
+}

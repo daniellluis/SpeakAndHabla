@@ -1,0 +1,149 @@
+/* General navbar styles */
+.nav-container {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+  }
+  
+  nav {
+    background-color: #23325A;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo {
+    max-width: 250px;
+    height: auto;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Hamburger button for small screens */
+  .hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive menu */
+  @media (max-width: 1000px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      background-color: #23325A;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .language-switcher {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    }
+  }
+  
+
+  
+/* Media queries para pantallas grandes */
+@media (min-width: 2000px) {
+  nav {
+      height: 100px; /* Ajustar la altura del navbar */
+      padding: 0 30px; /* Ajustar el padding del navbar */
+  }
+
+  .logo {
+      max-width: 300px; /* Ajustar el tamaño del logo */
+  }
+
+  .menu li a {
+      font-size: 20px; /* Ajustar el tamaño de la fuente de los enlaces */
+  }
+
+  .hamburger {
+      font-size: 35px; /* Ajustar el tamaño de la fuente del botón de hamburguesa */
+  }
+}
+
+@media (min-width: 3000px) {
+  nav {
+      height: 120px; /* Ajustar la altura del navbar */
+      padding: 0 40px; /* Ajustar el padding del navbar */
+  }
+
+  .logo {
+      max-width: 350px; /* Ajustar el tamaño del logo */
+  }
+
+  .menu li a {
+      font-size: 24px; /* Ajustar el tamaño de la fuente de los enlaces */
+  }
+
+  .hamburger {
+      font-size: 40px; /* Ajustar el tamaño de la fuente del botón de hamburguesa */
+  }
+}
+
+@media (min-width: 4000px) {
+  nav {
+      height: 140px; /* Ajustar la altura del navbar */
+      padding: 0 50px; /* Ajustar el padding del navbar */
+  }
+
+  .logo {
+      max-width: 400px; /* Ajustar el tamaño del logo */
+  }
+
+  .menu li a {
+      font-size: 28px; /* Ajustar el tamaño de la fuente de los enlaces */
+  }
+
+  .hamburger {
+      font-size: 45px; /* Ajustar el tamaño de la fuente del botón de hamburguesa */
+  }
+}

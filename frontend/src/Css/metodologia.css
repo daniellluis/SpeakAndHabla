@@ -1,0 +1,139 @@
+.metodologia-container {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para centrar todo */
+    align-items: center; /* Centra horizontalmente el contenido */
+    padding: 20px 40px; /* Agregar más padding horizontal (izquierda y derecha) */
+    text-align: center; /* Alinea el texto al centro */
+    margin: 0 40px;
+}
+
+.metodologia-title {
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+    /* color: #777; Color del título */
+    text-align: left; /* Alinear el título a la izquierda */
+    width: 100%; 
+    color: #23325A;
+    font-weight: 900; 
+}
+
+.metodologia-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #777; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno */
+    text-align: left; /* Alinear el texto de la lista a la izquierda */
+    width: 100%;
+}
+
+.metodologia-benefits {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;           /* Elimina el padding */
+    margin: 0;            /* Elimina el margen */
+    font-size: 1.2rem;    /* Tamaño de fuente para beneficios */
+    color: #777;          /* Color de texto para beneficios */
+    text-align: left; /* Alinear el texto de la lista a la izquierda */
+    width: 100%;
+}
+
+.metodologia-benefits li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+
+    
+}
+.metodologia-text strong, .metodologia-benefits strong {
+    color: #25A882; /* Color azul */
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
+/* Media queries para diferentes resoluciones */
+@media (max-width: 1200px) {
+    .metodologia-container {
+        padding: 20px 30px; /* Ajustar padding horizontal */
+        margin: 0 30px; /* Ajustar margen horizontal */
+    }
+}
+
+@media (max-width: 768px) {
+    .metodologia-container {
+        padding: 20px 15px; /* Ajustar padding horizontal */
+        margin: 0 15px; /* Ajustar margen horizontal */
+    }
+}
+
+@media (max-width: 480px) {
+    .metodologia-container {
+        padding: 20px 10px; /* Ajustar padding horizontal */
+        margin: 0 10px; /* Ajustar margen horizontal */
+    }
+
+    .metodologia-title {
+        margin-top: 10px; /* Reducir margen superior */
+        margin-bottom: 2px; /* Reducir margen inferior */
+    }
+
+    .metodologia-text {
+        margin-top: 10px; /* Reducir margen superior */
+        margin-bottom: 10px; /* Reducir margen inferior */
+    }
+}
+
+
+/* Media queries para pantallas grandes */
+@media (min-width: 2000px) {
+    .metodologia-title {
+        font-size: 3.5rem; /* Ajustar el tamaño de la fuente */
+    }
+
+    .metodologia-text {
+        font-size: 1.5rem; /* Ajustar el tamaño de la fuente */
+    }
+
+    .metodologia-benefits {
+        font-size: 1.5rem; /* Ajustar el tamaño de la fuente */
+    }
+
+    .metodologia-text strong, .metodologia-benefits strong {
+        font-size: 2rem; /* Ajustar el tamaño de la fuente */
+    }
+}
+
+@media (min-width: 3000px) {
+    .metodologia-title {
+        font-size: 4.5rem; /* Ajustar el tamaño de la fuente */
+    }
+
+    .metodologia-text {
+        font-size: 2rem; /* Ajustar el tamaño de la fuente */
+    }
+
+    .metodologia-benefits {
+        font-size: 2rem; /* Ajustar el tamaño de la fuente */
+    }
+
+    .metodologia-text strong, .metodologia-benefits strong {
+        font-size: 2.5rem; /* Ajustar el tamaño de la fuente */
+    }
+}
+
+@media (min-width: 4000px) {
+    .metodologia-title {
+        font-size: 5.5rem; /* Ajustar el tamaño de la fuente */
+    }
+
+    .metodologia-text {
+        font-size: 2.5rem; /* Ajustar el tamaño de la fuente */
+    }
+
+    .metodologia-benefits {
+        font-size: 2.5rem; /* Ajustar el tamaño de la fuente */
+    }
+
+    .metodologia-text strong, .metodologia-benefits strong {
+        font-size: 3rem; /* Ajustar el tamaño de la fuente */
+    }
+}

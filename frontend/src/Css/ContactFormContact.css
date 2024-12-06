@@ -1,0 +1,273 @@
+/* ContactFormContact.css */
+
+.form-container {
+  color: #23325A; 
+  background: linear-gradient(135deg, #e3e4e8 0%, #25A882 100%); /* Fondo verde difuminado con verde más fuerte hacia abajo */
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-radius: 10px; /* Bordes redondeados */
+  width: 95%; /* Ajustar el ancho del contenedor */
+  margin: 10px auto; /* Centrar el contenedor horizontalmente */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espacio entre el logo y el h2 */
+}
+
+.logoForm {
+  width: 60px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+}
+
+.h2-form {
+  font-weight: 900;
+  font-size: 2rem; /* Ajustar el tamaño de la fuente */
+  color: #23325A; /* Color principal */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px; /* Ajustar el ancho máximo del formulario */
+  margin: auto;
+  padding: 30px; /* Ajustar padding */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: white; /* Fondo blanco para el formulario */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el formulario */
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2rem; /* Ajustar el tamaño de la fuente */
+  color: #23325A; /* Color principal */
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 1rem; /* Ajustar el tamaño de la fuente */
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #25A882; /* Color principal */
+}
+
+button {
+  background-color: #23325A; /* Color azul */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem; /* Ajustar el tamaño de la fuente */
+}
+
+button:hover {
+  background-color: #f44cb1; /* Color rosa */
+}
+
+.status-popup {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+  opacity: 0;
+  animation: fadeIn 0.5s forwards; /* Animación de entrada */
+}
+
+/* Animación para el pop-up */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+  }
+  to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+  }
+}
+
+/* Estilo para estado exitoso */
+.status-popup.success {
+  background-color: #25A882;
+}
+
+/* Estilo para estado de error */
+.status-popup.error {
+  background-color: #f44cb1;
+}
+
+@media (max-width: 1200px) {
+  .form-container {
+      padding: 20px 30px; /* Ajustar padding horizontal */
+  }
+
+  .form {
+      max-width: 350px; /* Ajustar el ancho máximo del formulario */
+  }
+
+  .h2-form {
+      font-size: 28px; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+@media (max-width: 768px) {
+  .form-container {
+      padding: 20px 15px; /* Ajustar padding horizontal */
+  }
+
+  .form {
+      max-width: 300px; /* Ajustar el ancho máximo del formulario */
+  }
+
+  .h2-form {
+      font-size: 26px; /* Ajustar el tamaño de la fuente */
+  }
+
+  .title {
+      font-size: 18px; /* Ajustar el tamaño de la fuente */
+  }
+
+  input,
+  textarea {
+      padding: 8px; /* Ajustar el padding */
+      font-size: 0.9rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  button {
+      padding: 8px 16px; /* Ajustar el padding */
+      font-size: 0.9rem; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+      padding: 20px 10px; /* Ajustar padding horizontal */
+  }
+
+  .form {
+      max-width: 250px; /* Ajustar el ancho máximo del formulario */
+  }
+
+  .h2-form {
+      font-size: 24px; /* Ajustar el tamaño de la fuente */
+  }
+
+  .title {
+      font-size: 16px; /* Ajustar el tamaño de la fuente */
+  }
+
+  input,
+  textarea {
+      padding: 6px; /* Ajustar el padding */
+      font-size: 0.8rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  button {
+      padding: 6px 12px; /* Ajustar el padding */
+      font-size: 0.8rem; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+/* Media queries para pantallas grandes */
+@media (min-width: 2000px) {
+  .form-container {
+      font-size: 2rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .form {
+      max-width: 800px; /* Ajustar el ancho máximo del formulario */
+  }
+
+  .h2-form {
+      font-size: 3.5rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .title {
+      font-size: 2rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  input,
+  textarea {
+      font-size: 1.5rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  button {
+      font-size: 1.5rem; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+@media (min-width: 3000px) {
+  .form-container {
+      font-size: 2.5rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .form {
+      max-width: 1000px; /* Ajustar el ancho máximo del formulario */
+  }
+
+  .h2-form {
+      font-size: 4.5rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .title {
+      font-size: 2.5rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  input,
+  textarea {
+      font-size: 2rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  button {
+      font-size: 2rem; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+@media (min-width: 4000px) {
+  .form-container {
+      font-size: 3rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .form {
+      max-width: 1200px; /* Ajustar el ancho máximo del formulario */
+  }
+
+  .h2-form {
+      font-size: 5.5rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .title {
+      font-size: 3rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  input,
+  textarea {
+      font-size: 2.5rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  button {
+      font-size: 2.5rem; /* Ajustar el tamaño de la fuente */
+  }
+}
