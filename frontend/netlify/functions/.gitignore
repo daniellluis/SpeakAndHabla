@@ -1,0 +1,10 @@
+
+# dependencies
+/node_modules
+/claveSpeak.txt
+# Optional: Ignore other files and directories specific to your frontend
+.env
+dist/
+build/
+logs/
+*.log
