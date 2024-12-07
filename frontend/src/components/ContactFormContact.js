@@ -3,7 +3,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import Logo from '../img/Logos/Azul · Isologo · Sin Espacio.png';
 import '../Css/ContactFormContact.css'; // Importar el nuevo archivo CSS
 
-const apiUrl = process.env.REACT_APP_API_URL || '';
+
 
 function ContactFormContact() {
   const [status, setStatus] = useState('');
@@ -37,8 +37,7 @@ function ContactFormContact() {
       email: form.email.value,
       message: form.message.value,
     };
-    //const response = await fetch('/send-email', {
-    const response = await fetch(`${apiUrl}/api/send-email`, {
+    const response = await fetch('/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
