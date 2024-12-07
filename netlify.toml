@@ -1,7 +1,7 @@
 [build]
   base = "frontend"  # La carpeta donde se encuentra el frontend
   command = "npm run build"  # Comando para construir el frontend
-  publish = "build"  # La carpeta que contiene el sitio construido
+  publish = "frontend/build"  # La carpeta que contiene el sitio construido
 
 [functions]
   directory = "backend/netlify/functions"  # Carpeta donde se encuentran tus funciones
