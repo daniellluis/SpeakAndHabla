@@ -20,11 +20,12 @@ app.post('/send-email',async (req, res) => {
         auth: {
             user: process.env.EMAIL_USER,
             pass: process.env.EMAIL_PASS,
+            
         },
         logger: true,   // Habilita el registro de logs
         debug: true,    // Habilita el modo de depuración
     });
-
+   
 
     // Opciones del correo
     const mailOptions = {

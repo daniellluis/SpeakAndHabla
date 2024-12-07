@@ -1,3 +1,4 @@
+require('dotenv').config();
 const nodemailer = require('nodemailer');
 
 exports.handler = async (event, context) => {
@@ -21,7 +22,9 @@ exports.handler = async (event, context) => {
             logger: true,   // Habilita el registro de logs
             debug: true,    // Habilita el modo de depuración
         });
-
+        
+        console.log('EMAIL_USER:', process.env.EMAIL_USER);
+        console.log('EMAIL_PASS:', process.env.EMAIL_PASS ? 'Exists' : 'Not Set');
         // Opciones del correo
         const mailOptions = {
             from: 'hellospeakandhabla@gmail.com',
