@@ -1,4 +1,3 @@
-require('dotenv').config({ path: '.env.local' });
 const nodemailer = require('nodemailer');
 
 exports.handler = async (event, context) => {
