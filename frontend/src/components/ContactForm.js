@@ -3,7 +3,7 @@ import '../Css/ContactFormContact.css';
 import { useLanguage } from '../contexts/LanguageContext';
 import Logo from '../img/Logos/Isologo · Sin Espacio.png';
 
-const apiUrl = process.env.REACT_APP_API_URL || '';
+const apiUrl = process.env.REACT_APP_API_URL || 'https://speakandhabla.netlify.app/.netlify/functions/send-email';
 
 function ContactForm() {
   const [status, setStatus] = useState('');
