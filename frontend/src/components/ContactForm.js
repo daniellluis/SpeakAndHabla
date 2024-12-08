@@ -41,7 +41,8 @@ function ContactForm() {
       message: form.message.value,
     };
     
-      const response = await fetch('/send-email', {
+      //const response = await fetch('/send-email', {
+      const response = await fetch('https://speak-and-habla-kd80nmmee-daniellluis-projects.vercel.app/api/sendEmail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
