@@ -50,7 +50,7 @@ const nodemailer = require('nodemailer');
 
 exports.handler = async (event, context) => {
     // Definir los orígenes permitidos
-    const allowedOrigins = ['https://speakandhabla.netlify.app'];
+    const allowedOrigins = ['https://speakandhabla.netlify.app', 'https://speakandhabla.com'];
     const origin = event.headers.origin || '*';
     
     // Si el origen no está permitido, devolver error 403
