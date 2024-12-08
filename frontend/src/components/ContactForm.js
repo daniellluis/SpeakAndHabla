@@ -42,7 +42,7 @@ function ContactForm() {
     };
     
       //const response = await fetch('/send-email', {
-      const response = await fetch('https://speak-and-habla-kd80nmmee-daniellluis-projects.vercel.app/api/sendEmail', {
+      const response = await fetch('https://speakandhabla-api.netlify.app/.netlify/functions/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
