@@ -37,7 +37,8 @@ function ContactFormContact() {
       email: form.email.value,
       message: form.message.value,
     };
-    const response = await fetch('/send-email', {
+    //const response = await fetch('/send-email', {
+    const response = await fetch('https://speakandhabla-api.netlify.app/.netlify/functions/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -47,8 +48,10 @@ function ContactFormContact() {
 
     if (response.ok) {
       setStatus({ message: texts[language].Success, type: 'success' });
+      console.log('Correo enviado exitosamente'); 
     } else {
       setStatus({ message: texts[language].Error, type: 'error' });
+      console.error('Error al enviar el correo'); 
     }
     // Clear status after 3 seconds
     setTimeout(() => setStatus(''), 3000);

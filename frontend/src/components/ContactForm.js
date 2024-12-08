@@ -52,8 +52,10 @@ function ContactForm() {
 
     if (response.ok) {
       setStatus({ message: texts[language].Success, type: 'success' });
+      console.log('Correo enviado exitosamente'); 
     } else {
       setStatus({ message: texts[language].Error, type: 'error' });
+      console.error('Error al enviar el correo'); 
     }
     // Clear status after 3 seconds
     setTimeout(() => setStatus(''), 3000);
