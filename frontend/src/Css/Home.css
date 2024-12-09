@@ -50,19 +50,19 @@
 }
 
 .welcome-logo .logo {
-  max-width: 250px;
+  max-width: 200px;
   height: auto;
 }
 
 .welcome-1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin: 10px 0;
   animation: colorChange 6s infinite;
   font-weight: 900;
 }
 
 .welcome-2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin: 10px 0;
   animation: colorChange2 6s infinite;
   font-weight: 900;

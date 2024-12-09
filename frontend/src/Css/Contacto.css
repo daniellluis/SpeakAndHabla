@@ -1,29 +1,31 @@
 .contacto-container {
+    width: 90%;
     display: flex;
     flex-direction: column; /* Cambiado a columna para centrar todo */
-    align-items: center; /* Centra horizontalmente el contenido */
-    padding: 20px 20px; /* Agregar más padding horizontal (izquierda y derecha) */
+    align-items: center; /* Centra horizontalmente el contenido */ /* Agregar más padding horizontal (izquierda y derecha) */
     text-align: center; /* Alinea el texto al centro */
-    margin: 0 40px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .contacto-title {
-    font-size: 2.7rem;
-    margin-bottom: 20px;
+    font-size: 2.3rem;
+    margin: 0 auto;
     text-align: left; /* Alinear el título a la izquierda */
     width: 100%; 
     color: #23325A;
     font-weight: 900; 
+    box-sizing: border-box;
 }
 
 .contacto-text {
     font-size: 1.2rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 0.5;
     color: #777; /* Color del texto */
     border-radius: 10px; /* Bordes redondeados */ /* Espacio interno */
     text-align: left; /* Alinear el texto de la lista a la izquierda */
     width: 100%;
+    margin: 15px;
 }
 
 .contacto-text .icon {
@@ -60,30 +62,33 @@
 
     .contacto-text {
         padding: 10px;
+        line-height: 1.2;
     }
 }
 
 @media (max-width: 768px) {
     .contacto-container {
          /* Ajustar padding horizontal */
-        margin: 0 15px; /* Ajustar margen horizontal */
+        margin: 0 auto; /* Ajustar margen horizontal */
     }
 }
 
 @media (max-width: 480px) {
     .contacto-container {
         /* Ajustar padding horizontal */
-        margin: 0 10px; /* Ajustar margen horizontal */
+        margin: 0 auto; /* Ajustar margen horizontal */
     }
 
     .contacto-title {
         margin-top: 10px; /* Reducir margen superior */
         margin-bottom: 2px; /* Reducir margen inferior */
+        
     }
 
     .contacto-text {
         margin-top: 10px; /* Reducir margen superior */
         margin-bottom: 10px; /* Reducir margen inferior */
+        line-height: 1.4;
     }
 }
 

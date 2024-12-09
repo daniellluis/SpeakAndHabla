@@ -1,16 +1,16 @@
 .metodologia-container {
+    width: 90%;
     display: flex;
     flex-direction: column; /* Cambiado a columna para centrar todo */
     align-items: center; /* Centra horizontalmente el contenido */
     padding: 20px 40px; /* Agregar más padding horizontal (izquierda y derecha) */
     text-align: center; /* Alinea el texto al centro */
-    margin: 0 40px;
+    margin: 0 auto;
 }
 
 .metodologia-title {
-    font-size: 2.7rem;
-    margin-bottom: 20px;
-    /* color: #777; Color del título */
+    font-size: 2.3rem;
+    margin:0 auto;
     text-align: left; /* Alinear el título a la izquierda */
     width: 100%; 
     color: #23325A;
