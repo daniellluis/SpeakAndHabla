@@ -4,22 +4,13 @@
 .container {
   max-width: 100%;
   margin: 0 auto;
+  margin-top: -50px;
+  
 }
 
 .carousel-top {
   width: 100%;
-  margin-bottom: 20px; /* Ajusta el margen inferior para crear espacio entre el carrusel y el contenido */
-}
-
-.carousel .slide img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover; 
-  object-position: center center; /* Cambia de 'top' a 'center' para centrar mejor la imagen */
-}
-
-/* Opcional: si quieres que el carrusel esté fijo en la parte superior y el contenido fluya debajo */
-.carousel-top {
+  margin-bottom: 20px; 
   position: relative; /* Si quieres que se comporte como un banner */
   z-index: 1;
   margin: 0 auto;
@@ -27,12 +18,22 @@
   height: auto;
 }
 
+.carousel .slide img {
+  width: 100%;
+  height: 325px;
+  object-fit: cover; 
+  object-position: center center; 
+}
+
+
 .carousel-top img {
   width: 100%;
   height: auto;
   object-fit: cover; /* Esto garantiza que la imagen mantenga su proporción */
   object-position: center; /* Asegura que la imagen esté centrada completamente */
 }
+
+
 
 .welcome-section {
   display: flex;
@@ -49,7 +50,7 @@
 }
 
 .welcome-logo .logo {
-  max-width: 400px;
+  max-width: 250px;
   height: auto;
 }
 
@@ -109,7 +110,6 @@
 .card img {
   max-width: 50%;
   height: auto;
-  border-radius: 8px 0 0 8px;
 }
 
 .card-content {
@@ -122,6 +122,9 @@
   flex-direction: row;
   color: white;
 }
+.card:nth-child(odd) img {
+  border-radius: 0 8px 8px 0; /* Borde para las tarjetas con fondo #23325A */
+}
 
 .card:nth-child(odd) h2,
 .card:nth-child(odd) p {
@@ -133,6 +136,11 @@
   color: #23325a;
   flex-direction: row-reverse;
 }
+
+.card:nth-child(even) img {
+  border-radius: 8px 0 0 8px; /* Borde para las tarjetas con fondo blanco */
+}
+
 
 .card:nth-child(even) h2,
 .card:nth-child(even) p {
@@ -209,7 +217,7 @@
     margin-top: 10px;
     max-width: 70%;
     height: auto;
-    border-radius: 8px 8px 8px 8px;
+    
   }
 
 }
@@ -219,6 +227,11 @@
   .welcome-text {
     font-size: 1.4em;
   }
+  .card:nth-child(odd) img,
+  .card:nth-child(even) img {
+    border-radius: 8px 8px 8px 8px; /* Aplica el mismo borde a todas las imágenes */
+  }
+
 
   .card h2 {
     font-size: 1.3em;
@@ -226,14 +239,13 @@
 
   .card p {
     font-size: 1.1em;
-  }
- 
+  } 
 }
 
 @media only screen and (max-width: 600px) {
   
   .welcome-1 , .welcome-2 {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     margin: 0px;
   }
   
@@ -246,7 +258,7 @@
 
   .carousel .slide img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: cover; 
     object-position: center center; /* Cambia de 'top' a 'center' para centrar mejor la imagen */
   }
@@ -261,7 +273,7 @@
   }
 
   .welcome-logo .logo {
-    max-width: 60%; /* Asegura que el logo ocupe todo el ancho disponible */
+    max-width: 50%; /* Asegura que el logo ocupe todo el ancho disponible */
     height: auto;
   }
 
@@ -277,6 +289,10 @@
 
 /* Media queries para pantallas grandes */
 @media (min-width: 2000px) {
+
+  .carousel .slide img {
+    height: 370px;
+  }
   .welcome-1, .welcome-2 {
     font-size: 2.7rem; /* Ajustar el tamaño de la fuente */
   }
@@ -303,6 +319,9 @@
 
 
 @media (min-width: 3000px) {
+  .carousel .slide img {
+    height: 400px;
+  }
   .welcome-1, .welcome-2 {
     font-size: 4.5rem; /* Ajustar el tamaño de la fuente */
   }

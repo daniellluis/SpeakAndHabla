@@ -52,7 +52,6 @@ function Home() {
     <>
     <div className='container'>
       <Carousel
-        showArrows={true}
         autoPlay={true}
         infiniteLoop={true}
         showThumbs={false}

@@ -10,7 +10,7 @@
   
   nav {
     background-color: #23325A;
-    height: 80px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,8 +41,21 @@
   .menu li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
   }
+
+  .lang-button {
+    font-size: 16px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  .lang-switcher:hover {
+    color: #b0b0b0; /* Cambia a un tono más gris al hacer hover */
+  }
+  
   
   .language-switcher {
     display: flex;
@@ -60,13 +73,14 @@
     cursor: pointer;
   }
   
+  
   /* Responsive menu */
   @media (max-width: 1000px) {
     .menu {
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 80px;
+      top: 50px;
       right: 0;
       background-color: #23325A;
       width: 100%;
@@ -86,6 +100,13 @@
     justify-content: center;
     margin-top: 10px;
     }
+    .logo-container {
+      padding-right: 20px; /* Ajusta este valor según sea necesario */
+    }
+    .nav {
+      padding: 0px;
+    }
+  
   }
   
 
@@ -93,7 +114,7 @@
 /* Media queries para pantallas grandes */
 @media (min-width: 2000px) {
   nav {
-      height: 100px; /* Ajustar la altura del navbar */
+      height: 60px; /* Ajustar la altura del navbar */
       padding: 0 30px; /* Ajustar el padding del navbar */
   }
 
@@ -102,7 +123,7 @@
   }
 
   .menu li a {
-      font-size: 20px; /* Ajustar el tamaño de la fuente de los enlaces */
+      font-size: 19px; /* Ajustar el tamaño de la fuente de los enlaces */
   }
 
   .hamburger {
@@ -112,16 +133,20 @@
 
 @media (min-width: 3000px) {
   nav {
-      height: 120px; /* Ajustar la altura del navbar */
+      height: 90px; /* Ajustar la altura del navbar */
       padding: 0 40px; /* Ajustar el padding del navbar */
   }
 
-  .logo {
+  .logo-container .logo {
       max-width: 350px; /* Ajustar el tamaño del logo */
   }
 
   .menu li a {
-      font-size: 24px; /* Ajustar el tamaño de la fuente de los enlaces */
+      font-size: 27px; /* Ajustar el tamaño de la fuente de los enlaces */
+  }
+
+  .lang-button {
+    font-size: 25px;
   }
 
   .hamburger {
