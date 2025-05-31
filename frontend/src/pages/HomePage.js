@@ -9,10 +9,10 @@ import Card2 from '../img/Logos/persons/games.jpg';
 import Card3 from '../img/Logos/persons/clases-en-grupo.jpg';
 import Card4 from '../img/Logos/persons/teacher-2.jpg';
 import Card5 from '../img/Logos/persons/manos.jpg';
-import square1 from '../img/Logos/Friday_Sale_Instagram.png';
-import  square2  from '../img/Logos/Post-1.png';
-import "keen-slider/keen-slider.min.css";
-import { useKeenSlider } from "keen-slider/react";
+// import square1 from '../img/Logos/Friday_Sale_Instagram.png';
+// import  square2  from '../img/Logos/Post-1.png';
+// import "keen-slider/keen-slider.min.css";
+// import { useKeenSlider } from "keen-slider/react";
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Carousel } from 'react-responsive-carousel';
@@ -21,25 +21,25 @@ import Logo from '../img/Logos/Isologo · Sin Espacio.png';
 
 function Home() {
   const { language } = useLanguage();
-  const [sliderRef] = useKeenSlider({
-    loop: true,
-    mode: "snap",
-    slides: {
-      perView: 4,
-      spacing: 4,      // poca separación entre slides
-    },
-    breakpoints: {
-      "(max-width: 767px)": {
-        slides: { perView: 1, spacing: 2 },
-      },
-      "(min-width: 768px) and (max-width: 1199px)": {
-        slides: { perView: 2, spacing: 3 },
-      },
-      "(min-width: 1200px)": {
-        slides: { perView: 4, spacing: 4 },
-      },
-    },
-  });
+  // const [sliderRef] = useKeenSlider({
+  //   loop: true,
+  //   mode: "snap",
+  //   slides: {
+  //     perView: 4,
+  //     spacing: 4,      // poca separación entre slides
+  //   },
+  //   breakpoints: {
+  //     "(max-width: 767px)": {
+  //       slides: { perView: 1, spacing: 2 },
+  //     },
+  //     "(min-width: 768px) and (max-width: 1199px)": {
+  //       slides: { perView: 2, spacing: 3 },
+  //     },
+  //     "(min-width: 1200px)": {
+  //       slides: { perView: 4, spacing: 4 },
+  //     },
+  //   },
+  // });
   const texts = {
      ES: { 
       welcomeTitle1: "Cursos de inglés y español",
@@ -123,12 +123,12 @@ function Home() {
             <img src={Logo} alt="Logo" className="logo" />
           </div>
         </div>
-        <div ref={sliderRef} className="keen-slider square-images">
+        {/* <div ref={sliderRef} className="keen-slider square-images">
         <div className="keen-slider__slide"><img src={square1} alt="Imagen 1" /></div>
         <div className="keen-slider__slide"><img src={square2} alt="Imagen 2" /></div>
         <div className="keen-slider__slide"><img src={square1} alt="Imagen 3" /></div>
         <div className="keen-slider__slide"><img src={square2} alt="Imagen 4" /></div>
-      </div>
+      </div> */}
       <div className="cards-section">
           <div className="card">
             <img src={Card1} alt="Card 1" />
