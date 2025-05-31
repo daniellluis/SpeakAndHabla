@@ -12,7 +12,7 @@ function SobreNosotros() {
       aboutUsText: `
         Mi nombre es <strong>Mary Stratigou</strong>, soy de Grecia y soy la creadora de esta academia online de inglés y español. 
         Soy profesora certificada de inglés y español de las universidades de Cambridge, Michigan, Lancashire y del Instituto Cervantes respectivamente. 
-        Tengo una experiencia de más de 15 años en el sector de la enseñanza en academias de idiomas, empresas y organizaciones. 
+        Tengo una experiencia de más de 16 años en el sector de la enseñanza en academias de idiomas, empresas y organizaciones. 
         Esa <strong>experiencia</strong> y<strong> pasión</strong> por la enseñanza de idiomas me ha llevado a crear mi propia academia online, Speak&Habla, realizando un sueño de muchos años.
   
         ¡Siempre me han apasionado los idiomas! Os tengo que confesar que hablo seis idiomas: inglés, griego, español, francés, turco y catalán. 
@@ -34,7 +34,7 @@ function SobreNosotros() {
         
         My name is <strong>Mary Stratigou</strong>, I am from Greece, and I am the founder of this online academy of English and Spanish courses. 
         I am a certified English and Spanish teacher from the universities of Cambridge, Michigan, Lancashire, and Instituto Cervantes, respectively. 
-        I have more than 15 years of experience in the teaching sector in foreign language schools, companies, and organizations. 
+        I have more than 16 years of experience in the teaching sector in foreign language schools, companies, and organizations. 
         This<strong> experience</strong> and <strong> passion</strong> for language teaching have led me to create my own online academy, Speak&Habla, making a dream of many years come true.
         
         I have always been passionate about languages! I must confess that I speak six languages: English, Greek, Spanish, French, Turkish, and Catalan. 
