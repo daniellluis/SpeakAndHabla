@@ -10,12 +10,46 @@
 
 .carousel-top {
   width: 100%;
-  margin-bottom: 20px; 
-  position: relative; /* Si quieres que se comporte como un banner */
-  z-index: 1;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+  height: 300px;            /* Altura fija para uniformidad */
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0;
+}
+
+.carousel-top .carousel-slide,
+.carousel-top .slide {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-top .carousel-slide img,
+.carousel-top .slide img,
+.carousel-top img {
+  width: 100%;
+  height: 100%;            /* Cubre toda la altura del contenedor */
+  object-fit: cover;       /* Mantiene proporción recortando bordes */
+  object-position: center;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;          /* elimina fondo */
+  color: #ddd;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-arrow--prev {
+  left: 1rem;
+}
+
+.carousel-arrow--next {
+  right: 1rem;
 }
 
 .carousel .slide img {
@@ -186,6 +220,41 @@
   100% {
     color: #25A882; /* Ambos h2 terminan en rosa y verde */
   }
+}
+
+
+.keen-slider.square-images {
+  margin: 40px auto; 
+  overflow: hidden;
+  background: linear-gradient(90deg, #f0f0f0 0%,  #f44cb1 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+}
+
+/* Cada slide será un cuadrado */
+.square-images .keen-slider__slide {
+  /* aspect-ratio: 1/1 fuerza relación 1:1 */
+  aspect-ratio: 1 / 1;
+  /* Para que no colapse y use el ancho que Keen le dé */
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* La imagen cubre todo el slide cuadrado */
+.square-images .keen-slider__slide img {
+  width: 85%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 0.85; /* efecto difuminado inicial */
+  transition: opacity 0.3s ease-in-out; /* para centrarlo */
+}
+
+.square-images .keen-slider__slide:hover img {
+  opacity: 1; /* al hacer hover, se muestra nítida */
 }
 
 /* Media queries */
